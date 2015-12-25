@@ -1,0 +1,28 @@
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (1, 'Romania', 'Brasov', '500407', 95, 'Zizinului');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (2, 'Germany', 'Munich', '80687', 4, 'Preysing');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (3, 'Romania', 'Brasov', '500407', 91, 'Zizinului');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (4, 'Germany', 'Munich', '80687', 3, 'Elsenheimer');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (5, 'Romania', 'Brasov', '500407', 41, 'Zizinului');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (6, 'Germany', 'Munich', '80687', 2, 'Sandstr');
+INSERT INTO address(`id`,  `country`, `city`, `plz`,  streetNo,  street) values (7, 'Romania', 'Brasov', '500407', 77, 'Zizinului');
+
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (1,  'Andreas', 'Loibl', 64,  '2011-12-18 00:00:00', 1);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (2,  'Andreas', 'Koehler', 64,  '2011-12-18 00:00:00', 2);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (3,  'Katja', 'Bandholz', 64,  '2011-12-18 00:00:00', 3);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (4,  'Daniel', 'Ernst', 64,  '2011-12-18 00:00:00', 4);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (5,  'Philipp', 'Geier', 64,  '2011-12-18 00:00:00', 5);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (6,  'Markus', 'Koehler', 64,  '2011-12-18 00:00:00', 6);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (7,  'Nicole', 'Loibl', 64,  '2011-12-18 00:00:00', 7);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (8,  'Florian', 'Schorsch', 64,  '2011-12-18 00:00:00', 1);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (9,  'Gebhard', 'Sven', 64,  '2011-12-18 00:00:00', 2);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (10,  'Gerhard', 'Theodor', 64,  '2011-12-18 00:00:00', 3);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (11,  'Gernot', 'Thomas', 64,  '2011-12-18 00:00:00', 4);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (12,  'Heiner', 'Waldemar', 64,  '2011-12-18 00:00:00', 5);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (13,  'Horst', 'Walther', 64,  '2011-12-18 00:00:00', 6);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (14,  'Daniel', 'Wendel', 64,  '2011-12-18 00:00:00', 7);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (15,  'Philipp', 'Wenzel', 64,  '2011-12-18 00:00:00', 4);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (16,  'Markus', 'Simon', 64,  '2011-12-18 00:00:00', 3);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (17,  'Conrad', 'Steffen', 64,  '2011-12-18 00:00:00', 5);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (18,  'Egon', 'Koehler', 64,  '2011-12-18 00:00:00', 2);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (19,  'Dierk', 'Bandholz', 64,  '2011-12-18 00:00:00', 7);
+INSERT INTO contact(`id`,  `firstname`, `lastname`, `age`,  birthdate,  address_id) values (20,  'Emmerich', 'Sepp', 64,  '2011-12-18 00:00:00', 1);
