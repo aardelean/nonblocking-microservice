@@ -1,0 +1,12 @@
+---
+applications:
+- name: ms-nonblocking
+  memory: 512MB
+  buildpack: java_buildpack
+  path: build/libs/ms-template-nonblocking-1.0-SNAPSHOT.jar
+  host: ms-nonblocking
+  timeout: 180
+  services:
+   - mysqldb
+  env:
+    SPRING_PROFILES_ACTIVE: cloud

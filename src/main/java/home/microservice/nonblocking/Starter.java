@@ -5,7 +5,7 @@ import org.springframework.context.annotation.*;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 
 @Configuration
-@Import({VertxConfig.class, JOOQConfiguration.class, DataSourceConfiguration.class})
+@Import({VertxConfig.class, JOOQConfiguration.class, DataSourceConfiguration.class, CloudDataSourceConfiguration.class})
 @ComponentScan("home.microservice.nonblocking.contact")
 @PropertySource("classpath:/application.properties")
 public class Starter {
