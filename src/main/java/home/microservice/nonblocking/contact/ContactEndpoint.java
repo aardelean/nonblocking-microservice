@@ -1,5 +1,6 @@
 package home.microservice.nonblocking.contact;
 
+import io.advantageous.qbit.annotation.PathVariable;
 import io.advantageous.qbit.annotation.RequestMapping;
 import io.advantageous.qbit.annotation.RequestMethod;
 import org.slf4j.Logger;
@@ -22,4 +23,8 @@ public class ContactEndpoint {
     public List<ContactDomainDTO> get(){
         return service.getAllContacts();
     }
+
+    @RequestMapping(value = "/{id}", method = RequestMethod.GET, contentType = "application/json")
+    public ContactDomainDTO getOne(@PathVariable("id") Long id){
+        return service.getOneContact(id);}
 }

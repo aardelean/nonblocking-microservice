@@ -33,4 +33,14 @@ public class ContactService {
                 .map(r -> new ContactDomainDTO(r.into(Tables.CONTACT), r.into(Tables.ADDRESS)))
                 .collect(Collectors.toList());
     }
+
+    public ContactDomainDTO getOneContact(Long id){
+        Record r = context
+                .select()
+                .from(Contact.CONTACT)
+                .innerJoin(Address.ADDRESS).on(Contact.CONTACT.ADDRESS_ID.eq(Address.ADDRESS.ID))
+                .where(Contact.CONTACT.ID.eq(id))
+                .fetchOne();
+        return new ContactDomainDTO(r.into(Tables.CONTACT), r.into(Tables.ADDRESS));
+    }
 }
