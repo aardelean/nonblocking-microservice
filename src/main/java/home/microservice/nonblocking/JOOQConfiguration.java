@@ -2,6 +2,7 @@ package home.microservice.nonblocking;
 
 import co.paralleluniverse.fibers.jdbc.FiberDataSource;
 import org.jooq.DSLContext;
+import org.jooq.SQLDialect;
 import org.jooq.impl.DSL;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -14,8 +15,6 @@ public class JOOQConfiguration {
 
     @Bean
     public DSLContext context(DataSource dataSource) throws SQLException {
-        return DSL.using(FiberDataSource.wrap(dataSource)
-                .getConnection());
+        return DSL.using(FiberDataSource.wrap(dataSource), SQLDialect.MYSQL);
     }
-
 }
